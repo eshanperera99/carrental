@@ -454,7 +454,7 @@ public class PanelCar extends javax.swing.JPanel {
             return false;
         }
 
-        if (!Pattern.matches("^[0-9]+$", dailyratetxt.getText())) {
+        if (!Pattern.matches("^[0-9]+(\\.[0-9]+)?$", dailyratetxt.getText())) {
             JOptionPane.showMessageDialog(fromPanel, "Invalid or Empty Daily Rate");
             return false;
         }
